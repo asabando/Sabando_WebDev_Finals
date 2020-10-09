@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <fieldset>
+    <center>
+      <title>REGISTRATION FORM</title>
+</head>
+<fieldset>
+  <h1>REGISTRATION FORM</h1>
+  </center>
+
+  <body>
+
+    <form name="myForm" action="/action_page.php" onsubmit="return registrationform()" method="post" required>
+
+      <table>
+
+        <p>
+          <p2 style="font-family:cambria">"This is an online registration form that makes it easy to plan your next events such as conferences, workshops, or classes. Our registration form let people fill out the form from any smartphone, tablet, or computer. And this is less hassle to the users."</p2>
+
+          <tr>
+            <td><b>
+                <p style="font-family:tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NAME:
+              </b></t>
+        </p>
+        <td><input type="text" id="fname" name="fname" placeholder="First&Last Name" />
+        </td>
+        </tr>
+        <tr>
+          <td><b>
+              <p style="font-family:tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EMAIL:
+            </b></td>
+          </p>
+          <td><input id="uname" name="uname" type="email" placeholder="forexample@example.com" />
+        </tr>
+        <tr>
+          <td><b>
+              <p style="font-family:tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:
+            </b></td>
+          </p>
+          <td><input type="password" id="password" name="password" value="" maxlength="8" placeholder="Enter Password" /></td>
+        </tr>
+        <tr>
+          <td><b>
+              <p style="font-family:tahoma">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Confirm&nbsp;Password:&nbsp;
+            </b></td>
+          </p>
+          <td><input type="password" id="cpassword" name="cpassword" value="" maxlength="8" placeholder="Enter Confirm Password" /></td>
+        </tr>
+        <tr>
+          <td>
+            <p style="font-family:tahoma"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GENDER:</b>
+          </td>
+          <td>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+
+            <form action="/action_page.php">
+              <b>
+                <p style="font-family:tahoma">
+                  <labelfor="birthday">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Birthday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              </b>
+              <input type="date" id="birthday" name="birthday">
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p style="font-family:tahoma">
+              <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Position Title: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+
+              <select name="drpLoginType" id="drpLoginType">
+                <option value="Guest">Guest</option>
+                <option value="Admin">Parent</option>
+                <option value="SuperUser">Student</option>
+                <option value="Business Owner">Professor</option>
+              </select>
+
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="3">
+            <p style="font-family:tahoma">
+              <input type="checkbox" id="cbxPolicy1" name="cbxPolicy1" />
+              <label for="cbxPolicy1" class="highlight" href="css_syntax.asp">By creating an account you agree to accept our <b>terms & conditions</b>, that you are over 18+ & you are aware of our <b>policy!</b></label>
+          </td>
+        </tr>
+        </p>
+        <tr>
+          <td colspan="2" align="right">
+            <center> <input type="reset" value="Reset" class="highlight" href="css_syntax.asp">
+              <input type="submit" value="Submit" class="highlight" href="css_syntax.asp"></center>
+          </td>
+          </td>
+        </tr>
+
+        </td>
+      </table>
+</fieldset>
+
+</form>
+<style>
+  body {
+    background-image: url("https://images.unsplash.com/photo-1510070009289-b5bc34383727?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+  }
+
+  h1 {
+    color: white;
+    font-size: 50px;
+  }
+
+  p1 {
+    color: white;
+  }
+
+  p2 {
+    color: white;
+    font-size: 16px;
+  }
+
+  input.highlight:hover {
+    color: #ffc300;
+  }
+</style>
+<script>
+  function registrationform() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "" || x == null) {
+      alert("First Name must be filled out.");
+      return false;
+    }
+  }
+
+  function registrationform() {
+    var x = document.forms["myForm"]["uname"].value;
+    if (x == "" || x == null) {
+      alert("Username must be filled out.");
+      return false;
+    }
+  }
+
+  function registrationform() {
+    var x = document.forms["myForm"]["password"].value;
+    if (x == "" || x == null) {
+      alert("Password must be filled out max. of 8.");
+      return false;
+    }
+  }
+
+  function registrationform() {
+    var x = document.forms["myForm"]["cpassword"].value;
+    if (x == "" || x == null) {
+      alert("Confirm Password must be filled out.");
+      return false;
+    }
+  }
+
+  function registrationform() {
+    var x = document.forms["myForm"]["birthday"].value;
+    if (x == "" || x == null) {
+      alert("Birthday must be filled out.");
+      return false;
+    }
+  }
+
+  function registrationform() {
+    var x = document.forms["myForm"]["cbxPolicy1"].value;
+    if (x == "" || x == null) {
+      alert("Terms & Condition must be check.");
+      return false;
+    }
+  }
+</script>
+</body>
+
+</html>
