@@ -25,6 +25,7 @@ Also add a "README.md" document in your final repository. This README.md file sh
 5. (a) I learned how to put a understandable protocols to my web app and while i'm doing the do's and don'ts I realized
        that we need to follow this and while i'm look for articles and updates for my web app, I realized that we need to be careful
        and we need our presence of mind the this COVID-19 is not easy.
+       
    (b) I learned about this course/subject is that, to know about HTML5, CSS3, JavaScript, Bootstrap4, etc. because of this
        I can now realized that if we don't know about this web tools, we can't design and create a website nice and appropriate for our users.
        
